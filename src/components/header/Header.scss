@@ -1,0 +1,29 @@
+@import "../../scss/index";
+
+.header-row{
+  padding: .3em;
+  .header-col{
+    margin-left: 3em;
+
+    strong{
+      font-weight: normal;
+      font-size: .9rem;
+      font-style: italic;
+    }
+
+    strong:last-child{
+      margin-left: 2em;
+    }
+  }
+
+  .header-col-div{
+    margin-right: 3em;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1em;
+    svg{
+      cursor: pointer;
+      font-size: 1.3rem;
+    }
+  }
+}

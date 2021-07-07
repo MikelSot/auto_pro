@@ -1,0 +1,51 @@
+@import "../../scss/index";
+
+.row-path{
+  border: 1px solid black;
+  padding:.7rem 4.3rem 0 4.3rem;
+  align-items: center;
+  justify-content: center;
+  .nav-path{
+      display: flex;
+      gap: 4.5rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+
+      strong{
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      a {
+        color: $primary-dark;
+        text-decoration: none;
+        //padding-bottom: .7rem;
+      }
+      & > a:hover{
+        border-bottom: 2.5px solid $border-bottom;
+      }
+
+  }
+}
+
+.path-register, .nav-item_dropdown-header{
+  cursor: pointer;
+  &:hover{
+    border-bottom: 2.5px solid $border-bottom;
+  }
+}
+
+.nav-item_dropdown{
+
+  .nav-item_dropdown-header{
+    padding-bottom: .7rem;
+
+    svg{
+      font-size: 1rem;
+      margin-left: .2rem;
+    }
+  }
+}
+
+.nav-item_dropdown-header-rotate{
+  transform: rotate(180deg);
+}
