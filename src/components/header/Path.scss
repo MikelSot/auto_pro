@@ -1,7 +1,7 @@
 @import "../../scss/index";
 
 .row-path{
-  border: 1px solid black;
+  border-top: 1px solid black;
   padding:.7rem 4.3rem 0 4.3rem;
   align-items: center;
   justify-content: center;
@@ -38,14 +38,15 @@
 
   .nav-item_dropdown-header{
     padding-bottom: .7rem;
-
-    svg{
-      font-size: 1rem;
-      margin-left: .2rem;
-    }
   }
 }
 
 .nav-item_dropdown-header-rotate{
   transform: rotate(180deg);
+  transition: transform 1.5s
+}
+
+.path-icon-arrow{
+  font-size: 1rem;
+  margin-left: .4rem;
 }

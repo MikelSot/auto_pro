@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ModalLogin from "./ModalLogin";
 
 const Login = (props) => {

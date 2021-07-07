@@ -40,7 +40,7 @@ const SigninForm = (props) => {
                         </Col>
                     </Row>
                 </Form.Group>
-                <Button variant="primary" type="submit">Registrase Ahora</Button>
+                <Button variant="primary" type="submit">Registrase ahora</Button>
             </Form>
         </div>
     );
