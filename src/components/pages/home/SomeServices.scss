@@ -1,0 +1,72 @@
+@import "../../../scss/index";
+
+.someServices-header{
+  margin: 4rem 5rem 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .someServices-header-button{
+    button{
+      outline: none;
+      background: none;
+      padding: .3rem 2rem;
+      border-radius: 5px;
+      font-weight: bold;
+      border: 1px solid $font-dark;
+      svg{
+        font-size: .8rem;
+      }
+      &:hover{
+        background: $font-dark;
+        color: white;
+      }
+    }
+
+  }
+}
+
+.someServices-body{
+  margin: 0 9rem 4rem 9rem;
+  ol{
+    display: none;
+  }
+
+  .carousel-control-prev{
+    position: absolute;
+    top: 42%;
+    left: -4rem;
+    background: black;
+    border-radius: 45%;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .carousel-control-next{
+    position: absolute;
+    top: 42%;
+    right: -4rem;
+    background: black;
+    border-radius: 45%;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .someServices-item{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    .someServices-content{
+      width: 100%;
+      height: auto;
+      img{
+        border-radius: 7px;
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import Service from "./components/pages/services";
 import Product from "./components/pages/products";
 import Blog from "./components/pages/blog";
 import Appointment from "./components/pages/appointment";
+import Workshop from "./components/pages/workshop";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/product" component={Product}/>
             <Route path="/blog" component={Blog}/>
             <Route path="/appointment" component={Appointment}/>
+            <Route path="/workshop" component={Workshop}/>
             <Route component={()=>(
                 <>
                     <h1>Error 404</h1>

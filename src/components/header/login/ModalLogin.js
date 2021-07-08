@@ -2,7 +2,7 @@ import React from 'react';
 import {Modal} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import "./ModalLogin.scss";
-import {faUserCircle} from "@fortawesome/free-solid-svg-icons";
+import {faChild} from "@fortawesome/free-solid-svg-icons";
 
 const ModalLogin = (props) => {
     const {show, setShow, children} = props;
@@ -17,8 +17,7 @@ const ModalLogin = (props) => {
         >
             <Modal.Header>
                 <Modal.Title>
-                    <FontAwesomeIcon icon={faUserCircle}/>
-                    AutoPro
+                    <FontAwesomeIcon icon={faChild}/>
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>

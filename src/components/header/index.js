@@ -32,7 +32,6 @@ export default function Head(){
 
 const scrool =()=>{
     window.addEventListener('scroll', (e) => {
-        console.log(e.currentTarget.scrollY)
         const id = document.getElementById('header-autoPro');
         if (e.currentTarget.scrollY > 100) {
             id.style.display= 'none';

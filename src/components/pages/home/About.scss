@@ -1,0 +1,59 @@
+@import "../../../scss/index";
+
+.header-about{
+  width: 50vw;
+  margin: 3rem auto 2rem auto;
+  h2, p{
+    text-align:center;
+  }
+}
+
+.container-about{
+  margin: 0 5rem 3.2rem 5rem;
+
+  .content-about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+
+    .content-about-left{
+      img{
+        width: 100%;
+        border-radius: 2px;
+      }
+    }
+
+    .content-about-right{
+      margin: auto;
+      em{
+        white-space: initial;
+        line-height: 1.6;
+        font-size: 1.05rem;
+      }
+
+      div{
+          margin-top: 3.5rem;
+          display: flex;
+          justify-content: flex-end;
+        a{
+          text-decoration: none;
+          button{
+            display: inline-block;
+            outline: none;
+            background: none;
+            //border: none;
+            padding: .4rem .8rem;
+            border-radius: 5px;
+            font-weight: bold;
+            border: 1px solid $font-dark;
+            &:hover{
+              background: $font-dark;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
