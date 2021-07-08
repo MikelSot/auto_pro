@@ -7,6 +7,7 @@ import SomeServices from "./SomeServices";
 import SomeProducts from "./SomeProducts";
 import Team from "./Team";
 import Footer from "../../footer";
+import Map from "./Map";
 
 export default function Home(){
     return (
@@ -18,7 +19,7 @@ export default function Home(){
             <SomeServices/>
             <SomeProducts/>
             <Team/>
-
+            <Map/>
             <Footer/>
         </>
     );

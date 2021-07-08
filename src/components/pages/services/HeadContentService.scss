@@ -1,0 +1,16 @@
+.head-content-service{
+  margin: 1rem 1.5rem 5rem 1.5rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  div{
+    padding: 2rem;
+  }
+
+  img{
+    width: 100%;
+    border-radius: 2px;
+  }
+}

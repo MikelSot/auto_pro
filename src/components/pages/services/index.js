@@ -1,12 +1,13 @@
 import React from 'react';
 import Head from "../../header";
 import Footer from "../../footer";
+import HeadContentService from "./HeadContentService";
 
 export default function Service(){
     return (
         <>
             <Head/>
-            <h2>service p</h2>
+            <HeadContentService/>
             <Footer/>
         </>
     );
