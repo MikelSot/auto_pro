@@ -2,7 +2,7 @@ import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
-    faCog,
+    faIndustry,
     faQuestionCircle,
     faSearch,
     faTruckPickup,
@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Nav.scss"
 import LoginForm from "./login/LoginForm";
+import {Link} from "react-router-dom";
 
 
 export default function Nav(props){
@@ -34,8 +35,10 @@ export default function Nav(props){
                                 <FontAwesomeIcon icon={faSearch}/>
                             </div>
                             <FontAwesomeIcon icon={faUser} onClick={()=>openModal(<LoginForm setShowModal={setShowModal}/>)}/>
-                            <FontAwesomeIcon icon={faCog}/>
-                            <FontAwesomeIcon icon={faQuestionCircle}/>
+                            <Link to="/workshop">
+                                <FontAwesomeIcon icon={faIndustry}/>
+                            </Link>
+                                <FontAwesomeIcon icon={faQuestionCircle}/>
                         </div>
                     </Col>
                 </Row>

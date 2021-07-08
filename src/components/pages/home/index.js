@@ -5,6 +5,8 @@ import Features from "./Features";
 import About from "./About";
 import SomeServices from "./SomeServices";
 import SomeProducts from "./SomeProducts";
+import Team from "./Team";
+import Footer from "../../footer";
 
 export default function Home(){
     return (
@@ -15,6 +17,9 @@ export default function Home(){
             <About/>
             <SomeServices/>
             <SomeProducts/>
+            <Team/>
+
+            <Footer/>
         </>
     );
 }

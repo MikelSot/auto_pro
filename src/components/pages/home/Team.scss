@@ -1,0 +1,30 @@
+.container-team-home{
+  .row{
+    margin: 0 5rem 4rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    .content-team-home{
+      padding: .8rem;
+      border-radius: 20px;
+      height: 42vh;
+
+
+      .content-team-home-header{
+        height: 23vh;
+        width: 53%;
+        margin: 0 auto;
+        img{
+          border-radius: 10%;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .content-team-home-body{
+        margin-top: 1rem;
+        text-align: center;
+      }
+    }
+  }
+}
