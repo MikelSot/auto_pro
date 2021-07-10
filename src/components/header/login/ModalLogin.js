@@ -15,7 +15,7 @@ const ModalLogin = (props) => {
             centered
             size="md"
         >
-            <Modal.Header>
+            <Modal.Header className="modal-login-header">
                 <Modal.Title>
                     <FontAwesomeIcon icon={faChild}/>
                 </Modal.Title>

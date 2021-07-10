@@ -1,1 +1,11 @@
 @import "../../../scss/index";
+
+.button-login-singIn{
+  margin: 1rem auto 0 auto;
+  width: 94%;
+
+  .spinner-border{
+    width: 25px;
+    height: 25px;
+  }
+}

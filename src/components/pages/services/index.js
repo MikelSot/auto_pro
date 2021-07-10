@@ -3,10 +3,11 @@ import Head from "../../header";
 import Footer from "../../footer";
 import HeadContentService from "./HeadContentService";
 
-export default function Service(){
+export default function Service(props){
+
     return (
         <>
-            <Head/>
+            <Head client={props.client} setRefreshLogin={props.setRefreshLogin}/>
             <HeadContentService/>
             <Footer/>
         </>

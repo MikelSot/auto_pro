@@ -16,7 +16,6 @@ const Map = () => {
                     style={{border: 0}}
                     allowFullScreen=""
                     loading="lazy"
-                    className="mapa"
                 ></iframe>
             </div>
         </Container>

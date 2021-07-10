@@ -9,18 +9,27 @@ import Team from "./Team";
 import Footer from "../../footer";
 import Map from "./Map";
 
-export default function Home(){
+export default function Home(props){
+
     return (
         <>
-            <Head/>
-            <Slider/>
-            <Features/>
-            <About/>
-            <SomeServices/>
-            <SomeProducts/>
-            <Team/>
-            <Map/>
-            <Footer/>
+            <Head setRefreshLogin ={props.setRefreshLogin} client={props.client}/>
+            {
+                props.client?(
+                    <></>
+                ):(
+                    <>
+                        <Slider/>
+                        <Features/>
+                        <About/>
+                        <SomeServices/>
+                        <SomeProducts/>
+                        <Team/>
+                        <Map/>
+                        <Footer/>
+                    </>
+                )
+            }
         </>
     );
 }

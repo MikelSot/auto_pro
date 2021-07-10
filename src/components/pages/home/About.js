@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from 'react-bootstrap';
 import "./About.scss";
-import ImgAbout from '../../../assets/img/slider/pexels-cottonbro-4489749.jpg';
+import {ABOUT_IMG_ONE} from "../../../utils/slice";
 
 const About = () => {
     return (
@@ -13,7 +13,7 @@ const About = () => {
             <div className="container-about">
                  <section className="content-about">
                     <div className="content-about-left">
-                        <img src={ImgAbout} alt=""/>
+                        <img src={ABOUT_IMG_ONE} alt=""/>
                     </div>
                      <div className="content-about-right">
                          <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores assumenda autem consequatur delectus impedit, itaque labore quibusdam. Deserunt eius iusto laudantium nihil nisi quibusdam voluptates voluptatibus! Ab aliquid amet animi architecto at corporis culpa deserunt distinctio doloribus eaque enim error facilis fuga illo incidunt inventore ipsa laboriosam molestias nisi nulla officiis placeat porro quae quam quis rem, sapiente sed sunt suscipit tempora vel veritatis voluptas voluptate? Cumque, repellat, vero.</em>
