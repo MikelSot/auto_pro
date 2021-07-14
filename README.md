@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+#PARAMS 
+recuerda que la ruta manda llamar componentes o funciines
+que se ejecutaran cuando vallas a llmar a esa ruta 
+entonces, esa funcion que manda a llamar es la que va acontener los parametro (de la URL)
+como id etc.
+(ojo no la funcion que para el ID aunque no habria tambien problema)
+y usas wl WITHROUTER con ese optendra todos los parametreos.

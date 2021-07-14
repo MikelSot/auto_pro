@@ -3,6 +3,8 @@
 .nav-row{
   border-top:1px solid black;
   padding:.8em 3.3em;
+  display: flex;
+  align-items: center;
   .nav-icon_title{
     height: 100%;
     display: flex;

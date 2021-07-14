@@ -6,6 +6,7 @@ import Product from "../components/pages/products";
 import Blog from "../components/pages/blog";
 import Appointment from "../components/pages/appointment";
 import Workshop from "../components/pages/workshop";
+import ProfileIndex from "../components/pages/client/profile";
 
 const Rute = (props) => {
 
@@ -35,10 +36,13 @@ const Rute = (props) => {
                         props.client?(
                             <>
                                 <Route path={`/${props.client?.uri}`} exact>
-                                    <h2>PERFIL</h2>
+                                    <ProfileIndex/>
                                 </Route>
-                                <Route path="/service">
-                                    <h2>OTRA COSA</h2>
+                                <Route path="/appointment-me">
+                                    <h2>citas p</h2>
+                                </Route>
+                                <Route path="/invoice">
+                                    <h2>factura</h2>
                                 </Route>
                             </>
                         ):<></>

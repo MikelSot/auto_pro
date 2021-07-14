@@ -20,14 +20,14 @@ function App() {
   return (
       <ClientContext.Provider value={client}>
           {
-              client ? (
+              // client ? (
                             <>
                                 <Rute client={client} setRefreshLogin={setRefreshLogin}/>
                             </>
-                        )
-                  : (
-                      <Rute setRefreshLogin={setRefreshLogin}/>
-                  )
+                        // )
+                  // : (
+                  //     <Rute setRefreshLogin={setRefreshLogin}/>
+                  // )
           }
 
       </ClientContext.Provider>

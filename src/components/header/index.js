@@ -17,13 +17,12 @@ export default function Head(props){
         setShowModal(true);
         setContentModal(content)
     }
-
     if (!props.client){
         return(
             <>
                 <Header client={props.client}/>
                 <header className="header-autoPro">
-                    <Nav openModal={openModal} setShowModal={setShowModal} setRefreshLogin={props.setRefreshLogin}/>
+                    <Nav openModal={openModal} setShowModal={setShowModal}  setRefreshLogin={props.setRefreshLogin} />
                     <Path openModal={openModal} setShowModal={setShowModal}/>
                 </header>
                 <Login showModal={showModal} setShowModal={setShowModal} contentModal={contentModal}/>

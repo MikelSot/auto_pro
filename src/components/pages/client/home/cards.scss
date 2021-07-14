@@ -1,0 +1,41 @@
+.view-review-home{
+  border: 1px solid black;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5px;
+}
+.card-client-home{
+  display: flex;
+  gap: 4.7rem;
+  a{
+    text-decoration: none;
+    color: black;
+
+  }
+}
+.view-all-client-home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .8rem;
+  div:first-child{
+    border: 1px solid black;
+    padding: .2rem;
+    border-radius: 4px;
+    h2{
+      font-size: 1rem;
+      font-weight: bold;
+      margin: .1rem .2rem;
+    }
+  }
+  div:last-child{
+    a{
+      text-decoration: none;
+    }
+    svg{
+      margin-left: .3rem;
+      font-size: .8rem;
+    }
+  }
+}

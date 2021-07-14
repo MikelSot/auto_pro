@@ -2,17 +2,20 @@ import React from 'react';
 import {Container, Row, Col, NavDropdown} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
-    faBell,
+    faBars,
+    faBell, faChevronDown,
     faIndustry, faListAlt, faMoneyCheck, faPowerOff,
     faQuestionCircle,
     faSearch,
     faTruckPickup,
-    faUser, faUserCircle
+    faUser, faUserCircle, faUserShield
 } from "@fortawesome/free-solid-svg-icons";
 import "./Nav.scss"
+import "./utils/headerClient.scss"
 import LoginForm from "./login/LoginForm";
 import {Link} from "react-router-dom";
 import {logoutApi} from "../../api/loginApi";
+
 
 
 export default function Nav(props){
@@ -24,7 +27,6 @@ export default function Nav(props){
         logoutApi();
         setRefreshLogin(true);
     }
-
 
     return (
         <>
@@ -47,16 +49,15 @@ export default function Nav(props){
                             {
                                 client?(
                                     <>
-                                        <NavDropdown title={<FontAwesomeIcon icon={faBell}/>} id="navbarScrollingDropdown">
-                                            <NavDropdown.Item href=""></NavDropdown.Item>
-                                        </NavDropdown>
-                                        <NavDropdown title={<FontAwesomeIcon icon={faUserCircle}/>} id="navbarScrollingDropdown">
-                                            <NavDropdown.Item><strong>{`${client?.name} ${client?.last_name}`}</strong><em>{`${client.uri}`}</em></NavDropdown.Item>
-                                            <NavDropdown.Item href={`/${props.client?.uri}`}><FontAwesomeIcon icon={faUser}/>Perfil</NavDropdown.Item>
-                                            <NavDropdown.Item href="/service"><FontAwesomeIcon icon={faListAlt}/>Historial citas</NavDropdown.Item>
-                                            <NavDropdown.Item href="/service"><FontAwesomeIcon icon={faMoneyCheck}/>Historial Compras</NavDropdown.Item>
+                                        <NavDropdown title={<FontAwesomeIcon icon={faBell}/>} id="navbarScrollingDropdown"/>
+                                        <NavDropdown title={<><FontAwesomeIcon icon={faUserCircle}/><FontAwesomeIcon icon={faChevronDown}/></>} id="navbarScrollingDropdown" className="icon-user-init">
+                                            <NavDropdown.Item className="dropdown-client-init" ><strong>{`${client?.name} ${client?.last_name}`}</strong><em>{`${client.uri}`}</em></NavDropdown.Item>
+                                            <NavDropdown.Item className="dropdown-client-init" href={`/${props.client?.uri}`}><FontAwesomeIcon icon={faUser}/>Perfil</NavDropdown.Item>
+                                            <NavDropdown.Item className="dropdown-client-init" href="/appointment-me"><FontAwesomeIcon icon={faListAlt}/>Historial citas</NavDropdown.Item>
+                                            <NavDropdown.Item className="dropdown-client-init" href="/review"><FontAwesomeIcon icon={faUserShield}/>Revisión Técnica</NavDropdown.Item>
+                                            <NavDropdown.Item className="dropdown-client-init" href="/invoice"><FontAwesomeIcon icon={faMoneyCheck}/>Historial Compras</NavDropdown.Item>
                                             <NavDropdown.Divider />
-                                            <NavDropdown.Item href="" onClick={logout}><FontAwesomeIcon icon={faPowerOff}/>Cerrar Sesión</NavDropdown.Item>
+                                            <NavDropdown.Item href="" className="dropdown-client-init" onClick={logout}><FontAwesomeIcon icon={faPowerOff}/>Cerrar Sesión</NavDropdown.Item>
                                         </NavDropdown>
 
                                     </>

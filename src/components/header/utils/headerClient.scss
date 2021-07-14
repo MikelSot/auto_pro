@@ -1,0 +1,56 @@
+@import "../../../scss/index";
+
+.dropdown-client-init{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 4px;
+  strong{
+    display: block;
+    line-height: 1;
+  }
+  svg{
+    font-size: 1.2rem;
+    margin-right: .3rem;
+  }
+
+  &:first-child{
+    &:focus{
+      background: none;
+      color: black;
+    }
+    &:hover{
+      background: none;
+    }
+  }
+}
+
+.dropdown-item{
+  &:focus{
+    background: $font-primary;
+  }
+}
+
+.dropdown-toggle{
+  text-decoration: none;
+  color: black;
+  &::after{
+    display: none;
+  }
+}
+
+
+.nav-link{
+  padding: .1rem .5rem;
+  &:hover{
+    color: $font-grey;
+  }
+}
+
+.icon-user-init{
+  border: 1px solid black;
+  border-radius: 10px;
+  svg:last-child{
+    margin-left: .2rem;
+    font-size: 1rem;
+  }
+}

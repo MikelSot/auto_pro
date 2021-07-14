@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {DivItemsHome,ItemsCarouselService} from "./utilsHome/ItemCarouselService";
 import "./SomeServices.scss";
+import {SERVICE} from "../../../utils/globals";
 
 const SomeServices = () => {
     const [index, setIndex] = useState(0);
@@ -14,8 +15,8 @@ const SomeServices = () => {
     }
 
     const data =ItemsCarouselService()
-    const firstPart = data.slice(0,data.length/2);
-    const secondPart = data.slice(data.length/2, data.length)
+    const firstPart = data?.slice(0,data.length/2);
+    const secondPart = data?.slice(data.length/2, data.length)
 
     return (
         <>
@@ -31,10 +32,10 @@ const SomeServices = () => {
              <section className="someServices-body">
                  <Carousel activeIndex={index} onSelect={()=>handleSelect()}>
                      <Carousel.Item>
-                        <DivItemsHome values={firstPart}/>
+                        <DivItemsHome values={firstPart} type={SERVICE}/>
                      </Carousel.Item>
                      <Carousel.Item>
-                        <DivItemsHome values={secondPart}/>
+                        <DivItemsHome values={secondPart} type={SERVICE}/>
                      </Carousel.Item>
                  </Carousel>
              </section>

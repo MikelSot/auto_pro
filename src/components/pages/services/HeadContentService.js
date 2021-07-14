@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from "react-bootstrap";
 import "./HeadContentService.scss";
-import ImgHeadProduct from "../../../assets/img/slider/pexels-andrea-piacquadio-3806249.jpg";
+// import ImgHeadProduct from "../../../assets/img/slider/pexels-andrea-piacquadio-3806249.jpg";
 
 const HeadContentService = () => {
     return (
@@ -13,7 +13,7 @@ const HeadContentService = () => {
                         <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus corporis eligendi excepturi impedit magni molestiae officiis, optio provident, quasi, qui quisquam sit veniam? Ab accusantium blanditiis doloribus fuga nulla numquam omnis sequi soluta, suscipit, ullam velit veniam voluptatem. Assumenda commodi dolorem eius eligendi labore maxime nihil totam ut voluptatibus.</em>
                     </div>
                     <div>
-                        <img src={ImgHeadProduct} alt=""/>
+                        <img src="" alt=""/>
                     </div>
                 </section>
             </Container>
