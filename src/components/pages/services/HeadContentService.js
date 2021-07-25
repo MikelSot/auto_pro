@@ -1,7 +1,6 @@
 import React from 'react';
 import {Container} from "react-bootstrap";
 import "./HeadContentService.scss";
-// import ImgHeadProduct from "../../../assets/img/slider/pexels-andrea-piacquadio-3806249.jpg";
 
 const HeadContentService = () => {
     return (

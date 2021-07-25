@@ -6,7 +6,6 @@ export default function Product(props){
     return (
         <>
             <Head client={props.client} setRefreshLogin={props.setRefreshLogin}/>
-
             <Footer/>
         </>
     );

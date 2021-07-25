@@ -1,4 +1,8 @@
-export const API_HOST = "http://3.128.51.192:5000";
+export const API_HOST = "http://3.128.51.192:5000"; //http://localhost:5000
+export const GET = "GET";
+export const POST = "POST";
+export const PUT = "PUT";
+export const DELETE = "DELETE";
 export const ERROR = "error";
 export const TOKEN = "token";
 export const ROLE_CLIENT = 2;

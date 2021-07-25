@@ -22,7 +22,7 @@ const SomeServices = () => {
         <>
          <Container fluid>
              <section className="someServices-header">
-                 <h2>Some Services</h2>
+                 <h2>SERVICIOS</h2>
                  <div className="someServices-header-button">
                      <Link to="/service">
                          <button className="someServices-button-home">Ver Todos <FontAwesomeIcon icon={faArrowRight}/></button>

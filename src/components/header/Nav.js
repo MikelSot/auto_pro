@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Row, Col, NavDropdown} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
-    faBars,
     faBell, faChevronDown,
     faIndustry, faListAlt, faMoneyCheck, faPowerOff,
     faQuestionCircle,
@@ -53,11 +52,11 @@ export default function Nav(props){
                                         <NavDropdown title={<><FontAwesomeIcon icon={faUserCircle}/><FontAwesomeIcon icon={faChevronDown}/></>} id="navbarScrollingDropdown" className="icon-user-init">
                                             <NavDropdown.Item className="dropdown-client-init" ><strong>{`${client?.name} ${client?.last_name}`}</strong><em>{`${client.uri}`}</em></NavDropdown.Item>
                                             <NavDropdown.Item className="dropdown-client-init" href={`/${props.client?.uri}`}><FontAwesomeIcon icon={faUser}/>Perfil</NavDropdown.Item>
-                                            <NavDropdown.Item className="dropdown-client-init" href="/appointment-me"><FontAwesomeIcon icon={faListAlt}/>Historial citas</NavDropdown.Item>
-                                            <NavDropdown.Item className="dropdown-client-init" href="/review"><FontAwesomeIcon icon={faUserShield}/>Revisión Técnica</NavDropdown.Item>
-                                            <NavDropdown.Item className="dropdown-client-init" href="/invoice"><FontAwesomeIcon icon={faMoneyCheck}/>Historial Compras</NavDropdown.Item>
+                                            <NavDropdown.Item className="dropdown-client-init" href={`/${props.client?.uri}`}><FontAwesomeIcon icon={faListAlt}/>Historial citas</NavDropdown.Item>
+                                            <NavDropdown.Item className="dropdown-client-init" href={`/${props.client?.uri}`}><FontAwesomeIcon icon={faUserShield}/>Revisión Técnica</NavDropdown.Item>
+                                            <NavDropdown.Item className="dropdown-client-init" href={`/${props.client?.uri}`}><FontAwesomeIcon icon={faMoneyCheck}/>Historial Compras</NavDropdown.Item>
                                             <NavDropdown.Divider />
-                                            <NavDropdown.Item href="" className="dropdown-client-init" onClick={logout}><FontAwesomeIcon icon={faPowerOff}/>Cerrar Sesión</NavDropdown.Item>
+                                            <NavDropdown.Item href="/" className="dropdown-client-init" onClick={logout}><FontAwesomeIcon icon={faPowerOff}/>Cerrar Sesión</NavDropdown.Item>
                                         </NavDropdown>
 
                                     </>

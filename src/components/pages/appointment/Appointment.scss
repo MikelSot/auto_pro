@@ -1,0 +1,131 @@
+
+.section-appointment-container {
+    padding: 2vw 0 2vw 0;
+    width: 90vw;
+    min-height: 70vh;
+    margin: auto;
+}
+
+//form
+.form-margin-appointment {
+    margin: 1vw;
+    min-height: 53vh;
+}
+.appointment-form-user {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+    padding: 2vw;
+    width: 77%;
+    margin: auto;
+    display: flex;
+    //gap: .5rem;
+}
+.image-appointment {
+    width: 30vw;
+    height: max-content;
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.items-input {
+    display: block;
+    .input-form-appointment {
+        height: 2.5vw;
+        font-weight: 500;
+    }
+}
+.formulario-appointment {
+    width: 30vw;
+    padding: 1vw;
+}
+
+//calendar
+.section-date-time {
+    width: max-content;
+    display: flex;
+    margin: auto;
+    min-height: 53vh;
+
+    .container-date {
+        display: flex;
+        width: max-content;
+        align-items: flex-start;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+        box-sizing: border-box;
+        padding: 1vw;
+
+        .section-calendar-appointment {
+            .calendar-calendar {
+                max-width: 500px;
+                box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+        .formulario-appointment {
+            text-align: center;
+            box-sizing: border-box;
+            padding: 1vw;
+
+            .timer-item {
+                margin: 0.5vw;
+
+                .item-timer-select {
+                    width: 8vw;
+                }
+            }
+        }
+    }
+}
+
+//verification
+.section-verification-appointment {
+    min-width: min-content;
+    width: 45%;
+    height: min-content;
+    margin: 1vw auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+    padding: 3vw 2vw;
+    min-height: 53vh;
+
+    .c-step-veri-result {
+        .btn-appointment-confirm{
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+
+
+.switch-order_for-appointment{
+    display: grid;
+    grid-template-columns: 45% 22% 23%;
+    gap: 1rem;
+}
+
+.confirm-appointment-card{
+    padding: 0 1rem 1rem 1rem;
+    div{
+        margin-bottom: .5rem;
+        font-size: 1rem;
+        strong {
+            margin-right: .5rem;
+        }
+        &:last-child{
+            strong{
+                display: block;
+            }
+            div{
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                padding: .4rem;
+                margin-left: 1rem;
+            }
+        }
+
+        &:nth-child(3),&:nth-child(4), &:nth-child(5){
+        }
+    }
+
+}

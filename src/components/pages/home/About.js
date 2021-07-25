@@ -7,8 +7,8 @@ const About = () => {
     return (
         <Container fluid>
             <header className="header-about">
-                <h2 className="title-features">About</h2>
-                <p>consec delectus facere nisi, odio totam vitae! Ut!</p>
+                <h2 className="title-features">Sobre Nosotros</h2>
+                <p>Es una mecánica automotriz de buen reconocimiento distrital con excelente calidad profesional y servicios completos.</p>
             </header>
             <div className="container-about">
                  <section className="content-about">
@@ -16,7 +16,7 @@ const About = () => {
                         <img src={ABOUT_IMG_ONE} alt=""/>
                     </div>
                      <div className="content-about-right">
-                         <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores assumenda autem consequatur delectus impedit, itaque labore quibusdam. Deserunt eius iusto laudantium nihil nisi quibusdam voluptates voluptatibus! Ab aliquid amet animi architecto at corporis culpa deserunt distinctio doloribus eaque enim error facilis fuga illo incidunt inventore ipsa laboriosam molestias nisi nulla officiis placeat porro quae quam quis rem, sapiente sed sunt suscipit tempora vel veritatis voluptas voluptate? Cumque, repellat, vero.</em>
+                         <em>Somos una mecánica automotriz formada hace 30 años en el distrito de mala. a través de los años hemos implementado nuevas técnicas y materiales para el agrado de los clientes. buscamos mejorar y estar al servicio de cada cliente que llega a nosotros, brindando buena atención y un servicio de calidad. contamos con 3 sucursales y un límite de empleados capacitados y formados profesionalmente. es un gusto para nosotros trabajar en este rubro y enfrentarnos a diferentes desafíos en el campo mecánico automotriz.</em>
                          <div>
                             <a href="/workshop">
                                 <button>Ver Sucursales</button>

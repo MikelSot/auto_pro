@@ -11,7 +11,6 @@ export const ItemsCarouselService = () => {
     useEffect(()=>{
         AllServicesHomeApi().then(response =>{
             setShowServiceHome(response)
-            // if (!response) {toast.error("Servicios no disponibles")}
         }).catch(()=>{
             toast.error("Servicios no disponibles")
         })

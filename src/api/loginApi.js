@@ -1,4 +1,4 @@
-import {API_HOST, TOKEN} from "../utils/globals";
+import {API_HOST, POST, TOKEN} from "../utils/globals";
 import jwtDecode from "jwt-decode";
 
 export const LoginApi = (client) => {
@@ -8,7 +8,7 @@ export const LoginApi = (client) => {
         email:client.email.toLowerCase()
     }
     const params = {
-        method:"POST",
+        method:POST,
         headers:{
             "Content-Type": "application/json"
         },

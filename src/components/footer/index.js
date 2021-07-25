@@ -13,7 +13,7 @@ const Footer = () => {
                         <section className="content-footer-top">
                             <div className="content-footer-top_left">
                                 <h2>AutoPro</h2>
-                                <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi impedit iure maiores minima mollitia neque nesciunt non quam quisquam vero.</em>
+                                <em>Es una mecánica automotriz de buen reconocimiento distrital con excelente calidad profesional y servicios completos.</em>
                             </div>
                             <div className="content-footer-top_center">
                                 <section>
@@ -41,10 +41,10 @@ const Footer = () => {
                             <div className="content-footer-top_right">
                                 <section>
                                     <h3>Contact</h3>
-                                    <strong><FontAwesomeIcon icon={faMapMarkedAlt}/><span>Mala, San Pedro</span></strong>
-                                    <strong><FontAwesomeIcon icon={faEnvelope}/><span>autoPro@gmail.com</span></strong>
-                                    <strong><FontAwesomeIcon icon={faMobile}/><span>+51 949982694</span></strong>
-                                    <strong><FontAwesomeIcon icon={faPhoneAlt}/><span>017827498</span></strong>
+                                    <strong><FontAwesomeIcon icon={faMapMarkedAlt}/><span>Mala, Dignidad Nacional</span></strong>
+                                    <strong><FontAwesomeIcon icon={faEnvelope}/><span>cossiomecanica2310@gmail.com</span></strong>
+                                    <strong><FontAwesomeIcon icon={faMobile}/><span>+51 919130379</span></strong>
+                                    <strong><FontAwesomeIcon icon={faPhoneAlt}/><span>+51 945827194</span></strong>
                                 </section>
                             </div>
                         </section>

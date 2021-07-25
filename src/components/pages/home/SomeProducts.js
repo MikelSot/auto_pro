@@ -22,7 +22,7 @@ const SomeProducts = () => {
         <>
             <Container fluid>
                 <section className="someServices-header">
-                    <h2>Some Products</h2>
+                    <h2>PRODUCTOS</h2>
                     <div className="someServices-header-button">
                         <Link to="/product">
                             <button className="someServices-button-home">Ver Todos <FontAwesomeIcon icon={faArrowRight}/></button>

@@ -75,5 +75,8 @@ recuerda que la ruta manda llamar componentes o funciines
 que se ejecutaran cuando vallas a llmar a esa ruta 
 entonces, esa funcion que manda a llamar es la que va acontener los parametro (de la URL)
 como id etc.
-(ojo no la funcion que para el ID aunque no habria tambien problema)
+(ojo no la funcion que pasa el ID aunque no habria tambien problema)
 y usas wl WITHROUTER con ese optendra todos los parametreos.
+
+#METODOS 
+[1] el metodo de PUT de actualiza r falata subir la actualizacion al servidor

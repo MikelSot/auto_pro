@@ -7,27 +7,27 @@ const Features = () => {
         <>
             <Container fluid>
                 <header className="header-features">
-                    <h2 className="title-features">Features</h2>
+                    <h2 className="title-features">Nuestro Trabajo</h2>
                     <p>consectetur adipisicing elit. Animi architecto earum, ipsam nostrum quaerat quis ratione sed voluptates! Ab alias delectus facere nisi, odio totam vitae! Ut!</p>
                 </header>
                 <div className="container-features">
                     <Row>
                         <section className="content-features">
                             <div className="content-features-body">
-                                <strong>Responsable</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore doloremque explicabo ipsam modi natus nisi nulla vero voluptatibus. Atque beatae consectetur distinctio ducimus error est, minima nostrum odio reiciendis?</p>
+                                <strong>Empleados</strong>
+                                <p>Los empleados de nuestra mecánica se encuentran con toda la capacitación ética y profesional que se requiere para un trabajo en este campo. nuestros empleados tienen la responsabilidad de realizar trabajos completos y ofrecer una atención respetable.</p>
                             </div>
                         </section>
                         <section className="content-features">
                             <div className="content-features-body">
-                                <strong>Entrega a tiempo</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore doloremque explicabo ipsam modi natus nisi nulla vero voluptatibus. Atque beatae consectetur distinctio ducimus error est, minima nostrum odio reiciendis?</p>
+                                <strong>Calidad</strong>
+                                <p>Nuestros servicios y materiales son uno de los mejores que se pueden encontrar en el distrito de mala. como en el artículo anterior se conoce la calidad de nuestros empleados de igual manera nuestros materiales son de una excelente resistencia y duración que cada cierto tiempo va mejorando de acuerdo con los nuevos materiales que salen al mercado.</p>
                             </div>
                         </section>
                         <section className="content-features">
                             <div className="content-features-body">
-                                <strong>Buena Calidad</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore doloremque explicabo ipsam modi natus nisi nulla vero voluptatibus. Atque beatae consectetur distinctio ducimus error est, minima nostrum odio reiciendis?</p>
+                                <strong>Tiempo</strong>
+                                <p>El tiempo que dura el servicio puede variar dependiendo del nivel de daño que tiene el vehículo ingresado, pero aquello no significa que la duración será innecesaria o cansada, ya que para cualquier tiempo de espera contamos con una pequeña sala donde podrá realizar la espera y adquirir bebidas o bocados que se encuentran en un mostrador.</p>
                             </div>
                         </section>
                     </Row>

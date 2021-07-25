@@ -2,14 +2,14 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "../components/pages/home";
 import Service from "../components/pages/services";
-import Product from "../components/pages/products";
 import Blog from "../components/pages/blog";
 import Appointment from "../components/pages/appointment";
 import Workshop from "../components/pages/workshop";
 import ProfileIndex from "../components/pages/client/profile";
+import ProfileEditClient from "../components/pages/client/profile/Edit";
+import Product from "../components/pages/products";
 
 const Rute = (props) => {
-
     return (
         <>
             <Router>
@@ -21,7 +21,7 @@ const Rute = (props) => {
                         <Service setRefreshLogin={props.setRefreshLogin} client={props.client}/>
                     </Route>
                     <Route path="/product">
-                        <Product setRefreshLogin={props.setRefreshLogin} client={props.client}/>
+                        <Product setRefreshLogin={props.setRefreshLogin} client={props.client} />
                     </Route>
                     <Route path="/blog">
                         <Blog setRefreshLogin={props.setRefreshLogin} client={props.client}/>
@@ -36,13 +36,12 @@ const Rute = (props) => {
                         props.client?(
                             <>
                                 <Route path={`/${props.client?.uri}`} exact>
-                                    <ProfileIndex/>
+                                    <ProfileIndex setRefreshLogin={props.setRefreshLogin} client={props.client}/>
                                 </Route>
-                                <Route path="/appointment-me">
-                                    <h2>citas p</h2>
-                                </Route>
-                                <Route path="/invoice">
-                                    <h2>factura</h2>
+                                <Route path={`/${props.client?.uri}/editprofile`}>
+                                    <ProfileEditClient setRefreshLogin={props.setRefreshLogin}
+                                                       client={props.client}
+                                                       />
                                 </Route>
                             </>
                         ):<></>

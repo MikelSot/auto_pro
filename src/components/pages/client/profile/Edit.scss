@@ -1,0 +1,69 @@
+.section-edit-profile-data {
+    width: 60vw;
+    margin: 2vw auto;
+
+    .contenedor-form-data-profile {
+        box-sizing: border-box;
+        padding: 1vw;
+        display: block;
+        margin-left: 3vw;
+    }
+
+    .txt-title-edit-profile {
+        text-align: center;
+        margin: 0 0 2vw 0;
+    }
+
+    .edit-img-profile-data {
+        width: min-content;
+        margin: auto;
+        display: block;
+
+        .img-client-profile-data {
+            width: 10vw;
+            height: 10vw;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .btn-edit-image-profile-data {
+            position: relative;
+            float: right;
+            top: -50px;
+        }
+    }
+
+    .form-edit-profile-data {
+        margin: 2.7vw 0 0 0;
+
+        .inputs-data-profile {
+            display: flex;
+
+            .items-input {
+                display: block;
+                box-sizing: border-box;
+                padding: 1vw;
+
+                Input {
+                    width: 22vw;
+                    height: 2vw;
+                }
+            }
+        }
+    }
+}
+
+.btn-client-edit-profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.form-edit-profile{
+    .row{
+        .col{
+            margin-bottom: 1rem;
+        }
+    }
+}

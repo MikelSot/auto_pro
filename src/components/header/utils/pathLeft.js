@@ -1,12 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import "./PahtLeft.scss";
-import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBoxes, faCalendarCheck, faFan, faHome, faStickyNote, faTools} from "@fortawesome/free-solid-svg-icons";
 
 
-export const MenuLeftInit =(props)=>{
+export const MenuLeftInit =()=>{
     const [over, setOver] = useState(false)
         const inside =()=>{
         document.getElementById("sidebar-menu").classList.add("sidebar-menu-show")

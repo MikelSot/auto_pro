@@ -22,7 +22,7 @@ export default function Head(props){
             <>
                 <Header client={props.client}/>
                 <header className="header-autoPro">
-                    <Nav openModal={openModal} setShowModal={setShowModal}  setRefreshLogin={props.setRefreshLogin} />
+                    <Nav openModal={openModal} setShowModal={setShowModal}  setRefreshLogin={props.setRefreshLogin} client={props.client}/>
                     <Path openModal={openModal} setShowModal={setShowModal}/>
                 </header>
                 <Login showModal={showModal} setShowModal={setShowModal} contentModal={contentModal}/>
@@ -45,7 +45,21 @@ export default function Head(props){
             case ROLE_ADMIN:
                 return (
                     <>
-                        ADMIN P
+                        <Header client={props.client}/>
+                        <header className="header-autoPro">
+                            <Nav openModal={openModal} setShowModal={setShowModal} setRefreshLogin={props.setRefreshLogin} client={props.client}/>
+                        </header>
+                        <ToastContainer
+                            position="top-right"
+                            autoClose={5000}
+                            hideProgressBar
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl={false}
+                            pauseOnVisibilityChange
+                            draggable
+                            pauseOnHover
+                        />
                     </>
                 );
             case ROLE_CLIENT:

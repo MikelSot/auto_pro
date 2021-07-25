@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Head from "../../header";
 import Slider from "./Slider";
 import Features from "./Features";
@@ -16,7 +16,7 @@ export default function Home(props){
 
     return (
         <>
-            <Head setRefreshLogin ={props.setRefreshLogin} client={props.client}/>
+            <Head setRefreshLogin ={props.setRefreshLogin} client={props.client} showDataClient={props.showDataClient}/>
             {
                 props.client?(
                     <>

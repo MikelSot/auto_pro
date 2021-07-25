@@ -1,0 +1,28 @@
+
+.cards-history-appointment-client{
+        display: flex;
+        flex-wrap: wrap;
+
+        .item-card-appointment-history {
+            margin: 0.5vw 0;
+
+            .card-history-appointment {
+                width: 46vw;
+                min-height: 10vw;
+                background-color: rgb(255, 200, 200);
+                margin: 0.3vw;
+                border-radius: 10px;
+
+                .item-info-history {
+                  width: 42vw;
+                  display: flex;
+                  justify-content: space-between;
+                }
+            }
+        }
+}
+
+#btn-scroll-next-items{
+  width: 30%;
+  margin-left: .4rem;
+}

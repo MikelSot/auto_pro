@@ -1,0 +1,126 @@
+{
+    "invoice": [
+        {
+            "id": 1,
+            "ruc": "13235264213",
+            "status": "Entegado",
+            "invoiceDate": "Jul 17 2021 17:57:26",
+            "client": "Mireya",
+            "employee": "Rodriguez",
+            "worksShop": "Asia",
+            "paymentMethod": "Efectivo",
+            "invoiceItems": 20,
+            "listProducts":["uno", "dos", "tres","cuatro","cinco"]
+        },
+        {
+            "id": 2,
+            "ruc": "16347209254",
+            "status": "Proceso",
+            "invoiceDate": "Feb 13 2021 19:57:15",
+            "client": "Jacquelyn",
+            "employee": "Morar",
+            "worksShop": "San Vicente",
+            "paymentMethod": "Credito",
+            "invoiceItems": 20
+        },
+        {
+            "id": 3,
+            "ruc": "15312476353",
+            "status": "Enviado",
+            "invoiceDate": "May 26 2021 23:07:05",
+            "client": "Bud",
+            "employee": "Johnson",
+            "worksShop": "Mala",
+            "paymentMethod": "Efectivo",
+            "invoiceItems": 20
+        },
+        {
+            "id": 4,
+            "ruc": "1631078733",
+            "status": "Entregado",
+            "invoiceDate": "Mar 25 2021 00:25:32",
+            "client": "Chanel",
+            "employee": "Zulauf",
+            "worksShop": "Chilca",
+            "paymentMethod": "Credito",
+            "invoiceItems": 20
+        },
+        {
+            "id": 5,
+            "ruc": "7173493670",
+            "status": "Enviado",
+            "invoiceDate": "Aug 20 2020 00:30:27",
+            "client": "Horace",
+            "employee": "Padberg",
+            "worksShop": "Cerro Azul",
+            "paymentMethod": "Efectivo",
+            "invoiceItems": 20
+        },
+        {
+            "id": 6,
+            "ruc": "3316076894",
+            "status": "Proceso",
+            "invoiceDate": "Jan 25 2021 08:55:44",
+            "client": "Ardith",
+            "employee": "Sporer",
+            "worksShop": "Asia",
+            "paymentMethod": "Credito",
+            "invoiceItems": 10
+        },
+        {
+            "id": 7,
+            "ruc": "5654745745",
+            "status": "Enviado",
+            "invoiceDate": "Jan 25 2021 08:55:44",
+            "client": "Reynolds",
+            "employee": "Iris Jakubowski",
+            "worksShop": "Asia",
+            "paymentMethod": "Credito",
+            "invoiceItems": 10
+        },
+        {
+            "id": 8,
+            "ruc": "5654745745",
+            "status": "Enviado",
+            "invoiceDate": "Jan 25 2021 08:55:44",
+            "client": "Reynolds",
+            "employee": "Iris Jakubowski",
+            "worksShop": "Asia",
+            "paymentMethod": "Credito",
+            "invoiceItems": 10
+        },
+        {
+            "id": 9,
+            "ruc": "5654745745",
+            "status": "Enviado",
+            "invoiceDate": "Jan 25 2021 08:55:44",
+            "client": "Reynolds",
+            "employee": "Iris Jakubowski",
+            "worksShop": "Asia",
+            "paymentMethod": "Credito",
+            "invoiceItems": 10
+        },
+        {
+            "id": 10,
+            "ruc": "5654745745",
+            "status": "Enviado",
+            "invoiceDate": "Jan 25 2021 08:55:44",
+            "client": "Reynolds",
+            "employee": "Iris Jakubowski",
+            "worksShop": "Asia",
+            "paymentMethod": "Credito",
+            "invoiceItems": 10
+        },
+        {
+            "id": 11,
+            "ruc": "5654745745",
+            "status": "Enviado",
+            "invoiceDate": "Jan 25 2021 08:55:44",
+            "client": "Reynolds",
+            "employee": "Iris Jakubowski",
+            "worksShop": "Asia",
+            "paymentMethod": "Credito",
+            "invoiceItems": 10
+        }
+    ]
+}
