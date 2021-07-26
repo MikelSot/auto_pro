@@ -5,6 +5,7 @@ import StepEjemplo from "./Step";
 import 'antd/dist/antd.css';
 import "./Appointment.scss";
 import {MenuLeftInit} from "../../header/utils/pathLeft";
+import AppointmentAdmin from "../admin/Appointment/Appointment";
 import {ROLE_ADMIN, ROLE_CLIENT} from "../../../utils/globals";
 
 export default function Appointment(props){
@@ -16,8 +17,9 @@ export default function Appointment(props){
                         <Head client={props.client} setRefreshLogin={props.setRefreshLogin}/>
                         <MenuLeftInit/>
                         <section className="right-sidebar">
-                            <h1>ADMIN CTM</h1>
+                            <AppointmentAdmin />
                         </section>
+                        <Footer/>
                     </>
                 );
             case ROLE_CLIENT:
@@ -27,8 +29,8 @@ export default function Appointment(props){
                         <MenuLeftInit/>
                         <section className="right-sidebar">
                             <StepEjemplo />
-                        </section>
                         <Footer/>
+                        </section>
                     </>
                 );
         }

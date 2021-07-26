@@ -1,30 +1,58 @@
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import "./Edit.scss";
 import { MenuLeftInit } from "../../../header/utils/pathLeft";
-import { Image} from "antd";
 import "antd/dist/antd.css";
 import Head from "../../../header";
 import {Button, Col, Form, Row} from "react-bootstrap";
-import {EditDataClient, GetDataClientByID} from "../../../../api/client";
+import {EditDataClient, GetDataClientByID, UploadAvatarClient} from "../../../../api/client";
 import {toast} from "react-toastify";
-import isEmail from "../../../../utils/isEmail";
-import {ERROR} from "../../../../utils/globals";
-import {faCamera} from "@fortawesome/free-solid-svg-icons";
+import {API_HOST, ERROR} from "../../../../utils/globals";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Link} from "react-router-dom";
+import {faCamera} from "@fortawesome/free-solid-svg-icons";
+import {Input} from "antd";
+import {useDropzone} from 'react-dropzone'
+import isEmail from "../../../../utils/isEmail";
+
 
 const Edit = (props) => {
     const [showDataClient, setShowDataClient] = useState(null);
     useEffect(()=>{
-            GetDataClientByID(props.client.id).then(response =>{
-                setShowDataClient(response.data)
-            }).catch(()=>{
-                toast.error("Reviews no disponibles");
-            });
+        GetDataClientByID(props.client.id).then(response =>{
+            setShowDataClient(response.data)
+        }).catch(()=>{
+            toast.error("Reviews no disponibles");
+        });
     }, [])
+
+    const [avatarClient, setAvatarClient] = useState(
+        showDataClient?.picture ? `${API_HOST}/${showDataClient?.picture}`: null
+    );
+
+    const [avatarFile, setAvatarFile] = useState(null);
+    const onDropAvatar = useCallback(acceptedFile =>{
+        const file = acceptedFile[0];
+        setAvatarClient(URL.createObjectURL(file))
+        setAvatarFile(file)
+    })
+
+    const {getRootProps:getRootAvatarProps, getInputProps:getInputAvatarProps} = useDropzone({
+        accept:"image/png, image/jpg, image/jpeg ",
+        noKeyboard:true,
+        multiple:false,
+        onDrop:onDropAvatar
+    })
+
 
     const onSubmit= (e)=>{
         e.preventDefault()
+        if (avatarFile){
+            console.log("SE EJECUTA")
+            UploadAvatarClient(avatarFile).catch(()=>{
+               toast.error("Error al subir la imagen")
+            }).finally(()=>{
+                window.location.reload();
+            });
+        }
 
         if(!isEmail(showDataClient.email)){
             toast.warning("Email invalido")
@@ -37,8 +65,6 @@ const Edit = (props) => {
                 }
             }).catch(()=>{
                 toast.error("Error del servidor, intenentelo mas tarde")
-            }).finally(()=>{
-                window.location.reload();
             })
         }
     }
@@ -46,6 +72,9 @@ const Edit = (props) => {
     const onChange =(e) =>{
       setShowDataClient({...showDataClient,[e.target.name]:e.target.value});
     }
+
+    console.log(showDataClient)
+
 
   return (
       <>
@@ -56,17 +85,14 @@ const Edit = (props) => {
             <h2 className="txt-title-edit-profile">Editar perfil</h2>
 
             <div className="edit-img-profile-data">
-              <Image
-                  className="img-client-profile-data"
-                  src="https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
-              />
-              <Button
-                  type="primary"
-                  shape="circle"
-                  icon={<FontAwesomeIcon icon={faCamera}/>}
-                  size="large"
-                  className="btn-edit-image-profile-data"
-              />
+              <div className="avatar-client" style={{backgroundImage: avatarFile === null ?`url('${API_HOST}/${showDataClient?.picture}')` : `url('${avatarClient}')`}}
+                   {...getRootAvatarProps()}
+              >
+                  <input {...getInputAvatarProps()}/>
+                  <div>
+                    <FontAwesomeIcon icon={faCamera}/>
+                  </div>
+              </div>
             </div>
             <div className="form-edit-profile-data">
                 <Form onSubmit={onSubmit} onChange={onChange} className="form-edit-profile">
@@ -133,15 +159,16 @@ const Edit = (props) => {
                     <Form.Group>
                         <Row>
                             <Col>
+                                <Form.Label>Contraseña</Form.Label>
+                                <Input.Password name="password" className="form-control" value={showDataClient?.password} />
+                            </Col>
+                            <Col>
                                 <Form.Label>Direccion:</Form.Label>
                                 <Form.Control
                                     type="text"
                                     name="address"
                                     defaultValue={showDataClient?.address}
                                 />
-                            </Col>
-                            <Col>
-
                             </Col>
                         </Row>
                     </Form.Group>
@@ -160,7 +187,3 @@ const Edit = (props) => {
 
 export default Edit;
 
-const isDni =(string)=>{
-    const dniValid = /([1-9]{8})/;
-    return dniValid.test(String(string).toLowerCase());
-}

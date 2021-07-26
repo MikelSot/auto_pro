@@ -1,0 +1,42 @@
+.cover {
+  width: 100%;
+  height: 20vw;
+  background-image: url(https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-appointment-review-admin{
+  max-width: 50vw;
+}
+
+.section-admin-appointment {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .container-admin-appointment {
+    .container-client-confirm-card {
+      width: 50vw;
+      background-color: rgb(255, 200, 200);
+      border-radius: 10px;
+      .admin-appointment-info-confirm {
+        display: flex;
+        justify-content: space-between;
+
+        .container-confirm-admin {
+          display: flex;
+        }
+      }
+      .admin-apointment-data-client {
+        display: block;
+        .admin-btn-result-appointment{
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

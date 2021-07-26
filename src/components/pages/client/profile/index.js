@@ -11,7 +11,7 @@ import SectionAppointment from "../appointment/History";
 import SectionReview from "../review/review";
 import SectionInvoice from "../invoice/Invoice";
 import Head from "../../../header";
-import {ROLE_CLIENT} from "../../../../utils/globals";
+import {API_HOST, ROLE_CLIENT} from "../../../../utils/globals";
 import {GetDataClientByID} from "../../../../api/client";
 import {toast} from "react-toastify";
 
@@ -78,7 +78,7 @@ const ProfileIndex = (props) => {
                         <div className="img-client-profile-edit">
                             <Image
                                 className="img-client"
-                                src="https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
+                                src={`${API_HOST}/${showDataClient?.picture}`}
                             />
                             <Button
                                 type="primary"

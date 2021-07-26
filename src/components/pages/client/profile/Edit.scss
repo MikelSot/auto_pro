@@ -15,9 +15,28 @@
     }
 
     .edit-img-profile-data {
-        width: min-content;
-        margin: auto;
-        display: block;
+        .avatar-client{
+            cursor: pointer;
+            margin: auto;
+            border: 1px solid black;
+            width: 19%;
+            height: 12rem;
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div{
+                font-size: 1.3rem;
+                color: #71c1e1;
+                svg:hover{
+                    color: white;
+                }
+
+            }
+        }
 
         .img-client-profile-data {
             width: 10vw;
@@ -30,6 +49,7 @@
             position: relative;
             float: right;
             top: -50px;
+            border-radius: 40%;
         }
     }
 
@@ -67,3 +87,4 @@
         }
     }
 }
+

@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React, {useEffect, useState} from "react";
 import "../profile/index.scss";
 import { Card, Typography, Space, Button } from "antd";
@@ -8,7 +7,7 @@ import {AllReviewClient} from "../../../../api/review";
 import {map} from "lodash";
 
 
-const reviewPage = (props) => {
+const ReviewPage = (props) => {
   const [showReviews, setShowReviews] = useState(null);
   useEffect(()=>{
       AllReviewClient(props.myClient.id, 50).then(response =>{
@@ -97,4 +96,4 @@ const reviewPage = (props) => {
   );
 };
 
-export default reviewPage;
+export default ReviewPage;
